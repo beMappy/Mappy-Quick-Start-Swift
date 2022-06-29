@@ -1,0 +1,38 @@
+PODS:
+  - ArcGIS-Runtime-SDK-iOS (100.14)
+  - CocoaLumberjack/Core (3.7.4)
+  - CocoaLumberjack/Swift (3.7.4):
+    - CocoaLumberjack/Core
+  - KeychainAccess (4.2.2)
+  - Mappy (0.0.2):
+    - ArcGIS-Runtime-SDK-iOS (= 100.14)
+    - CocoaLumberjack/Swift (= 3.7.4)
+    - KeychainAccess (= 4.2.2)
+    - Swinject (= 2.8.1)
+    - ZIPFoundation (= 0.9.13)
+  - Swinject (2.8.1)
+  - ZIPFoundation (0.9.13)
+
+DEPENDENCIES:
+  - Mappy
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ArcGIS-Runtime-SDK-iOS
+    - CocoaLumberjack
+    - KeychainAccess
+    - Mappy
+    - Swinject
+    - ZIPFoundation
+
+SPEC CHECKSUMS:
+  ArcGIS-Runtime-SDK-iOS: a2dc9c8202952fa58a1c9f1c2ded58887bea07b1
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Mappy: 6d2917091333ce11cd47fd571a25f1bd98117cbc
+  Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
+  ZIPFoundation: ae5b4b813d216d3bf0a148773267fff14bd51d37
+
+PODFILE CHECKSUM: 5b20eca1b48c430281d1a229f7e3a623658629bc
+
+COCOAPODS: 1.11.3
