@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 import Mappy
 
 class MapsViewController: UIViewController {
@@ -15,6 +16,7 @@ class MapsViewController: UIViewController {
     private var map: Map?
     private var sceneView = SceneView()
     private var scene: Scene?
+    private var cancellables = Set<AnyCancellable>()
     private let activityIndicatorView = UIActivityIndicatorView(style: .medium)
     
     override func viewDidLoad() {
@@ -27,22 +29,34 @@ class MapsViewController: UIViewController {
         
         // Initialize and load the Map(2D) and Scene(3D)
         map = Map(mapInfo: venueInfo)
-        map!.load { error in
-            print("Map loaded. Error?: \(String(describing: error))")
-            DispatchQueue.main.async { [weak self] in
-                self?.activityIndicatorView.stopAnimating()
-                self?.mapView.map = self?.map
-            }
-        }
+        map!.load()
+            .sink(receiveCompletion: {
+                if case .failure(let error) = $0 {
+                    print("map loading error: \(error)")
+                }
+            }, receiveValue: { [weak self] _ in
+                guard let self = self else { return }
+                DispatchQueue.main.async { [weak self] in
+                    self?.activityIndicatorView.stopAnimating()
+                    self?.mapView.map = self?.map
+                }
+            })
+            .store(in: &self.cancellables)
         
         scene = Scene(sceneInfo: venueInfo)
-        scene!.load { error in
-            print("Scene loaded. Error?: \(String(describing: error))")
-            DispatchQueue.main.async { [weak self] in
-                self?.activityIndicatorView.stopAnimating()
-                self?.sceneView.scene = self?.scene
-            }
-        }
+        scene!.load()
+            .sink(receiveCompletion: {
+                if case .failure(let error) = $0 {
+                    print("Scene loading error: \(error)")
+                }
+            }, receiveValue: { [weak self] _ in
+                guard let self = self else { return }
+                DispatchQueue.main.async { [weak self] in
+                    self?.activityIndicatorView.stopAnimating()
+                    self?.sceneView.scene = self?.scene
+                }
+            })
+            .store(in: &self.cancellables)
     }
     
     func addSubviews() {

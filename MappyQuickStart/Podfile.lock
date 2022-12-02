@@ -1,17 +1,25 @@
 PODS:
   - ArcGIS-Runtime-SDK-iOS (100.14)
-  - CocoaLumberjack/Core (3.7.4)
-  - CocoaLumberjack/Swift (3.7.4):
-    - CocoaLumberjack/Core
-  - KeychainAccess (4.2.2)
-  - Mappy (0.0.2):
+  - Mappy (0.3.1):
     - ArcGIS-Runtime-SDK-iOS (= 100.14)
-    - CocoaLumberjack/Swift (= 3.7.4)
-    - KeychainAccess (= 4.2.2)
-    - Swinject (= 2.8.1)
-    - ZIPFoundation (= 0.9.13)
-  - Swinject (2.8.1)
-  - ZIPFoundation (0.9.13)
+    - XCCocoaLumberjackSwift (= 3.7.4-xc14-3)
+    - XCKeychainAccess (= 4.2.2)
+    - XCPusherSwift (= 10.1.1-xc14-4)
+    - XCReachabilitySwift (= 5.1.0-xc14-3)
+    - XCSwinject (= 2.8.2)
+    - XCZIPFoundation (= 0.9.15)
+  - XCCocoaLumberjack (3.7.4-xc14-3)
+  - XCCocoaLumberjackSwift (3.7.4-xc14-3):
+    - XCCocoaLumberjack (= 3.7.4-xc14-3)
+  - XCKeychainAccess (4.2.2)
+  - XCNWWebSocket (0.5.2-xc14-4)
+  - XCPusherSwift (10.1.1-xc14-4):
+    - XCNWWebSocket (= 0.5.2-xc14-4)
+    - XCTweetNacl (= 1.0.2-xc14-4)
+  - XCReachabilitySwift (5.1.0-xc14-3)
+  - XCSwinject (2.8.2)
+  - XCTweetNacl (1.0.2-xc14-4)
+  - XCZIPFoundation (0.9.15)
 
 DEPENDENCIES:
   - Mappy
@@ -19,19 +27,29 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - ArcGIS-Runtime-SDK-iOS
-    - CocoaLumberjack
-    - KeychainAccess
     - Mappy
-    - Swinject
-    - ZIPFoundation
+    - XCCocoaLumberjack
+    - XCCocoaLumberjackSwift
+    - XCKeychainAccess
+    - XCNWWebSocket
+    - XCPusherSwift
+    - XCReachabilitySwift
+    - XCSwinject
+    - XCTweetNacl
+    - XCZIPFoundation
 
 SPEC CHECKSUMS:
   ArcGIS-Runtime-SDK-iOS: a2dc9c8202952fa58a1c9f1c2ded58887bea07b1
-  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
-  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
-  Mappy: 6d2917091333ce11cd47fd571a25f1bd98117cbc
-  Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
-  ZIPFoundation: ae5b4b813d216d3bf0a148773267fff14bd51d37
+  Mappy: 74e9e03d42495eda47961bbdcaff57b67488b6fb
+  XCCocoaLumberjack: bd55074b7edfaef267658708b2db3023468a764f
+  XCCocoaLumberjackSwift: c15c0a8fc463972f0b212b77268dce15e590b64f
+  XCKeychainAccess: 191db79838cf48d03107dd9e0eed132a1032d51d
+  XCNWWebSocket: 17af1104e2283a3635c5a34e62ee05b77313b914
+  XCPusherSwift: fd9b1a1ab6b34200cf5436a4c9227328cb5702cd
+  XCReachabilitySwift: b26e10e0ab5f25bee21e32efa296990ebeaff922
+  XCSwinject: 2aaa5e470f5be29c4eceb2546b0bd6483c9d6bc2
+  XCTweetNacl: d0e377ec3705a9e6d5d1c815556ce094ec8aff5d
+  XCZIPFoundation: 100aac8ae4bae5b8973e8e1c02830ad0b64b0803
 
 PODFILE CHECKSUM: 5b20eca1b48c430281d1a229f7e3a623658629bc
 
