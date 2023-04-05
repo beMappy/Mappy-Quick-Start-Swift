@@ -1,28 +1,28 @@
 PODS:
-  - ArcGIS-Runtime-SDK-iOS (100.14)
-  - Mappy (0.3.1):
-    - ArcGIS-Runtime-SDK-iOS (= 100.14)
+  - ArcGIS-Runtime-SDK-iOS (100.15)
+  - Mappy (0.4.9):
+    - ArcGIS-Runtime-SDK-iOS (= 100.15)
     - XCCocoaLumberjackSwift (= 3.7.4-xc14-3)
     - XCKeychainAccess (= 4.2.2)
-    - XCPusherSwift (= 10.1.1-xc14-4)
-    - XCReachabilitySwift (= 5.1.0-xc14-3)
+    - XCPusherSwift (= 10.1.1-xc14.2-2)
+    - XCReachabilitySwift (= 5.1.0-xc14.2-1)
     - XCSwinject (= 2.8.2)
     - XCZIPFoundation (= 0.9.15)
   - XCCocoaLumberjack (3.7.4-xc14-3)
   - XCCocoaLumberjackSwift (3.7.4-xc14-3):
     - XCCocoaLumberjack (= 3.7.4-xc14-3)
   - XCKeychainAccess (4.2.2)
-  - XCNWWebSocket (0.5.2-xc14-4)
-  - XCPusherSwift (10.1.1-xc14-4):
-    - XCNWWebSocket (= 0.5.2-xc14-4)
-    - XCTweetNacl (= 1.0.2-xc14-4)
-  - XCReachabilitySwift (5.1.0-xc14-3)
+  - XCNWWebSocket (0.5.2-xc14.2-2)
+  - XCPusherSwift (10.1.1-xc14.2-2):
+    - XCNWWebSocket (= 0.5.2-xc14.2-2)
+    - XCTweetNacl (= 1.0.2-xc14.2-2)
+  - XCReachabilitySwift (5.1.0-xc14.2-1)
   - XCSwinject (2.8.2)
-  - XCTweetNacl (1.0.2-xc14-4)
+  - XCTweetNacl (1.0.2-xc14.2-2)
   - XCZIPFoundation (0.9.15)
 
 DEPENDENCIES:
-  - Mappy
+  - Mappy (= 0.4.9)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -39,18 +39,18 @@ SPEC REPOS:
     - XCZIPFoundation
 
 SPEC CHECKSUMS:
-  ArcGIS-Runtime-SDK-iOS: a2dc9c8202952fa58a1c9f1c2ded58887bea07b1
-  Mappy: 74e9e03d42495eda47961bbdcaff57b67488b6fb
+  ArcGIS-Runtime-SDK-iOS: 4cb3b2246842ef3f7c7fcfd1b26ee1aa8e55f4e3
+  Mappy: 9ff0d11ef118bccae71ea4818088123acb696fbd
   XCCocoaLumberjack: bd55074b7edfaef267658708b2db3023468a764f
   XCCocoaLumberjackSwift: c15c0a8fc463972f0b212b77268dce15e590b64f
   XCKeychainAccess: 191db79838cf48d03107dd9e0eed132a1032d51d
-  XCNWWebSocket: 17af1104e2283a3635c5a34e62ee05b77313b914
-  XCPusherSwift: fd9b1a1ab6b34200cf5436a4c9227328cb5702cd
-  XCReachabilitySwift: b26e10e0ab5f25bee21e32efa296990ebeaff922
+  XCNWWebSocket: 8774951e5bef7d90bf3c0a1c9f1cc04e6fa016a5
+  XCPusherSwift: c72f505b5d8da60515f87151f0a859e94d97aefa
+  XCReachabilitySwift: cea33f130bf57e1a87438309b3e1a0aba84e7ee3
   XCSwinject: 2aaa5e470f5be29c4eceb2546b0bd6483c9d6bc2
-  XCTweetNacl: d0e377ec3705a9e6d5d1c815556ce094ec8aff5d
+  XCTweetNacl: 8106024de884a6befff5b4dc333b4fc9fa60e9b5
   XCZIPFoundation: 100aac8ae4bae5b8973e8e1c02830ad0b64b0803
 
-PODFILE CHECKSUM: 5b20eca1b48c430281d1a229f7e3a623658629bc
+PODFILE CHECKSUM: adadf67a980b7b01b2b9db825978225b51dccd05
 
 COCOAPODS: 1.11.3

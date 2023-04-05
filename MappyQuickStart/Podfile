@@ -1,4 +1,4 @@
-platform :ios, '13.0'
+platform :ios, '14.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
 
@@ -7,6 +7,6 @@ target 'MappyQuickStart' do
   use_frameworks!
 
   # Pods for MappyQuickStart
-  pod 'Mappy' # Elegant and composable interface for mapping, geocoding, and routing.
+  pod 'Mappy', '0.4.9' # Elegant and composable interface for mapping, geocoding, and routing.
 
 end
